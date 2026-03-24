@@ -1,6 +1,6 @@
 package com.example.hello.controller;
 
-import com.example.hello.service.GreetingService;
+import com.example.hello.GreetingService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
