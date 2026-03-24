@@ -1,0 +1,21 @@
+package com.example.hello.service;
+
+import com.example.hello.repository.GreetingRepository;
+import com.example.hello.util.StringUtil;
+import org.springframework.stereotype.Service;
+
+@Service
+public class GreetingService {
+
+    private final GreetingRepository greetingRepository;
+
+    public GreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
+
+    public String generateGreeting(String name) {
+        String greeting = greetingRepository.findGreeting();
+        String capitalizedName = StringUtil.capitalize(name);
+        return greeting + ", " + capitalizedName + "!";
+    }
+}
