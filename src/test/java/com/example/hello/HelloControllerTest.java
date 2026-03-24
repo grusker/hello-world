@@ -1,6 +1,7 @@
 package com.example.hello;
 
 import com.example.hello.GreetingService;
+import com.example.hello.controller.HelloController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
