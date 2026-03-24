@@ -1,7 +1,7 @@
-package com.example.hello.service;
+package com.example.hello;
 
-import com.example.hello.repository.GreetingRepository;
-import com.example.hello.util.StringUtil;
+import com.example.hello.GreetingRepository;
+import com.example.hello.StringUtil;
 import org.springframework.stereotype.Service;
 
 @Service
